@@ -2,6 +2,9 @@
 
 This gem contains the Inkdrop strategy for OmniAuth.
 
+## Disclaimer
+This gem is still under development and will be officially released only God knows when.
+
 ## How To Use It
 
 Usage is as per any other OmniAuth 1.0 strategy. So let's say you're using Rails, you need to add the strategy to your `Gemfile` along side omniauth:
