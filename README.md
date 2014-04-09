@@ -7,9 +7,8 @@ This gem is still under development and will be officially released only God kno
 
 ## How To Use It
 
-Usage is as per any other OmniAuth 1.0 strategy. So let's say you're using Rails, you need to add the strategy to your `Gemfile` along side omniauth:
+Usage is as per any other OmniAuth strategy. So let's say you're using Rails, you need to add the strategy gem to your `Gemfile`:
 
-    gem 'omniauth'
     gem 'omniauth-inkdrop'
 
 Once these are in, you need to add the following to your `config/initializers/omniauth.rb`:

@@ -19,14 +19,16 @@ module OmniAuth
           :last_name    => raw_info["lastName"],
           :email        => raw_info["email"],
           :name         => raw_info["name"],
-          :alias        => raw_info["alias"],
+          :nickname     => raw_info["alias"],
           :urls         => {
             'public_profile' => raw_info["permalink"]
           }
         }
       end
 
-      uid { access_token.params[:email] }
+      uid do
+        raw_info["id"].to_s
+      end
 
       extra do
         { 'raw_info' => raw_info }
